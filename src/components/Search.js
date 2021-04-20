@@ -1,5 +1,5 @@
 import React from "react";
-import { Button} from 'react-bootstrap'
+import { Button, Dropdown} from 'react-bootstrap'
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Search.css'
@@ -111,6 +111,7 @@ function SearchBusiness() {
           <input type='checkbox'></input>Crafting<br/>
         </div>
         <div>
+
           <filterby>Location</filterby><br/>
           <input type='checkbox' name='New York'></input>New York<br/>
           <input type='checkbox' name='New Jersey'></input>New Jersey<br/>
