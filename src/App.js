@@ -8,7 +8,7 @@ import SignIn from "./components/SignIn.js";
 // import PersonList from "./components/API.js";
 // import * from 'react-bootstrap'
 
-// import './App.css';
+import './App.css';
 
 //landing page
 function App() {
@@ -16,28 +16,30 @@ function App() {
   return (
     <div>
       <Router>
-        <Navbar bg="light" expand="lg">
-          <Navbar.Brand href="#home">Biz Wiz</Navbar.Brand>
+        <Navbar bg="dark" expand="lg">
+          <Navbar.Brand href="#home"><optionHeading>Biz Wiz</optionHeading></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
-              <Nav.Link href="#home"><Link to="/">Home</Link></Nav.Link>
-              <Nav.Link href="#link"><Link to="/Sign Up">Sign up</Link></Nav.Link>
-              <Nav.Link href="#link"><Link to="/Sign In">Sign In</Link></Nav.Link>
+            <Nav class="mr-auto">
+              <a><Link to="/SearchBusinesses"><landingOptions>Home</landingOptions></Link></a>
+              <a><Link to="/register"><landingOptions>Sign up</landingOptions></Link></a>
+              <a><Link to="/login"><landingOptions>Sign In</landingOptions></Link></a>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
+
         <Switch>
-          <Route path="/Sign Up">
+          <Route path="/register">
             <SignUp />
           </Route>
-          <Route path="/Sign In">
+          <Route path="/login">
             <SignIn />
           </Route>
           <Route path="/">
             <Home />
           </Route>
         </Switch>
+
       </Router>
     </div>
   );

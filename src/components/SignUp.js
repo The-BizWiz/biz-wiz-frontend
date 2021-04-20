@@ -48,16 +48,16 @@ render(){
   return (
     <div>
       <h2>Sign Up</h2>
-      <div>
+      <div className='sign-up-form'>
         <Form>
         <Form.Row>
           <Form.Group as={Col} md="5" controlId="validationCustom01" >
-            <Form.Label>First name</Form.Label>
+            <Form.Label className='first-name'>First name</Form.Label>
             <Form.Control
               required
               type="text"
               placeholder="First name"
-              defaultValue="Foo"
+              defaultValue="First Name"
               // name= "firstName"
               // onChange={this.changefirst}
             />
@@ -69,7 +69,7 @@ render(){
               required
               type="text"
               placeholder="Last name"
-              defaultValue="Bar"
+              defaultValue="Last Name"
             />
             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
           </Form.Group>
@@ -79,7 +79,7 @@ render(){
             <Form.Label>Business Type</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Wholesale"
+                placeholder="Category"
                 aria-describedby="inputGroupPrepend"
                 required
               />
@@ -111,8 +111,8 @@ render(){
         </Form.Row>
         <Form.Row>
         <Form.Group as={Col} md="3" controlId="validationCustom03">
-            <Form.Label>Adress</Form.Label>
-            <Form.Control type="text" placeholder="Adress" required />
+            <Form.Label>Address</Form.Label>
+            <Form.Control type="text" placeholder="Address" required />
             <Form.Control.Feedback type="invalid">
               Please provide a valid street address
             </Form.Control.Feedback>
