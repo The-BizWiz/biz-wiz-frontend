@@ -1,11 +1,11 @@
 import React from 'react';
-import Form from 'react-bootstrap/Form';
+//import Form from 'react-bootstrap/Form';
 // import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {register} from '../services/auth';
 // import {useState, useEffect} from 'react';
 import {useFormFields} from '../lib/customHooks';
-import {Redirect} from 'react-router';
+//import {Redirect} from 'react-router';
 import "./SignUp.css";
 
 

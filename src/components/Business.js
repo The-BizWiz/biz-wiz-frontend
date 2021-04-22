@@ -1,11 +1,10 @@
 import { BrowserRouter as Router, Switch, Route, Link, Redirect } from "react-router-dom";
-import { Navbar, Nav } from "react-bootstrap";
-import SearchBusiness from "./Search.js";
+//import { Navbar, Nav } from "react-bootstrap";
+//import SearchBusiness from "./Search.js";
 import './Business.css'
 import Home from './Home.js'
 import Post from "./Post.js";
 import "bootstrap/dist/css/bootstrap.min.css";
-import HomeIcon from "@material-ui/icons/Home";
 
 import {
   makeStyles,
