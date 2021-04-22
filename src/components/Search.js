@@ -156,7 +156,7 @@ function SearchBusiness() {
           <input type='checkbox'></input>Other<br/>
         </div>
         <div><ViewButton /></div><br/>
-        <Link to="/SearchBusinesses" className='filter-button'>Filter</Link>
+        <Button>Filter</Button>
         </div>
         <div className='list-container'>
           <BusinessList />

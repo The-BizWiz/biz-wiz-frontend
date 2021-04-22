@@ -3,6 +3,7 @@ import {Form, FormLabel} from 'react-bootstrap'
 //import axios from 'axios';
 import {useFormFields} from '../lib/customHooks';
 import {register} from '../services/auth';
+import './Post.css'
 
 import {
   makeStyles,
@@ -12,6 +13,7 @@ import {
   Drawer,
   Button,
   TextField,
+  TextareaAutosize,
 } from "@material-ui/core";
 
 export default function Post(){
@@ -25,19 +27,22 @@ export default function Post(){
     register(posts)
   };
   return (
+    <div>
       <React.Fragment>
         <Form onSubmit={handleSubmit}>
           <Form.Label htmlFor="title">Title</Form.Label>
           <Form.Control
-            placeholder='Post Title'
+            placeholder='Title'
             type="text"
             name="title"
             value={posts.title}
             onChange={setPostState}
           />
-          <Form.Label htmlFor='content'>Content</Form.Label>
-          <Form.Control
-          placeholder='Post Text'
+          <Form.Label htmlFor='content'>Content</Form.Label><br/>
+          <TextareaAutosize
+          rowsMin={8}
+          cols={90}
+          placeholder='Text'
           type='text'
           name='content'
           value={posts.content}
@@ -51,7 +56,7 @@ export default function Post(){
             Post
           </Button>
         </Form>
-       </React.Fragment>
+       </React.Fragment></div>
     );
   }
 

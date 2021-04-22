@@ -37,6 +37,7 @@ export default function SignUp () {
   
 
   return (
+    
     <form>
         <h3>Register Business</h3>
         <div className="form-group">
